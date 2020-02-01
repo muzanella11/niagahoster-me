@@ -2,5 +2,16 @@
   Variables
 ******************************************/
 
+/************** Font **************/
+$typeface-primary:          'Roboto', sans-serif;
+
+/* ************************************ */
+
 /************** Theme Color **************/
+$color-grey-main:           #6e6e6e;
+$color-grey-dark:           #303030;
+
+$color-main-text:           $color-grey-main;
+$color-footer:              $color-grey-dark;
+
 /* ************************************ */

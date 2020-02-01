@@ -1,0 +1,15 @@
+/******************************************
+  Mixin Clearfix
+******************************************/
+
+@mixin clearfix {
+  &::before {
+    content: '';
+    clear: both;
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+  }
+}

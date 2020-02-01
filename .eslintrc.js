@@ -21,6 +21,8 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    // allow console
+    "no-console": "off",
     // allow v-html
     'vue/no-v-html': [0],
     // allow paren-less arrow functions

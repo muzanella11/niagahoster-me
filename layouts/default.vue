@@ -1,8 +1,29 @@
 <template>
-  <div>
+  <main>
+    <!-- Begin Header -->
+    <niagahoster-header />
+    <!-- End Header -->
+
+    <!-- Begin Content -->
     <nuxt />
-  </div>
+    <!-- End Content -->
+
+    <!-- Begin Footer -->
+    <niagahoster-footer />
+    <!-- End Footer -->
+  </main>
 </template>
+<script>
+import NiagahosterHeader from '~/components/Header/template'
+import NiagahosterFooter from '~/components/Footer/template'
+
+export default {
+  components: {
+    NiagahosterHeader,
+    NiagahosterFooter
+  }
+}
+</script>
 
 <style>
 html {
