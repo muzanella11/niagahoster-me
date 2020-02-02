@@ -359,9 +359,84 @@
     <!-- End Hero -->
 
     <!-- Begin Hero -->
-    <section class="section section__detail-package">
+    <section class="section section__detail-package accent-line">
       <div class="container-sm">
-        asd
+        <div class="row detail-package__header">
+          <div class="col-12">
+            <h3 class="title">
+              Semua Paket Hosting Sudah Termasuk
+            </h3>
+          </div>
+        </div>
+
+        <div class="row detail-package__content">
+          <div class="col-4 content__item">
+            <div class="image">
+              <img :src="require('~/assets/images/icons/icon-all-version.svg')">
+            </div>
+            <h3 class="title">
+              PHP Semua Versi
+            </h3>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="col-4 content__item">
+            <div class="image">
+              <img :src="require('~/assets/images/icons/icon-sql.svg')">
+            </div>
+            <h3 class="title">
+              MySQL Versi 5.6
+            </h3>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="col-4 content__item">
+            <div class="image">
+              <img :src="require('~/assets/images/icons/icon-cpanel.svg')">
+            </div>
+            <h3 class="title">
+              Panel Hosting cPanel
+            </h3>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="col-4 content__item">
+            <div class="image">
+              <img :src="require('~/assets/images/icons/icon-uptime.svg')">
+            </div>
+            <h3 class="title">
+              Garansi Uptime 99.9%
+            </h3>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="col-4 content__item">
+            <div class="image">
+              <img :src="require('~/assets/images/icons/icon-Innodb.svg')">
+            </div>
+            <h3 class="title">
+              Database InnoDB Unlimited
+            </h3>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div class="col-4 content__item">
+            <div class="image">
+              <img :src="require('~/assets/images/icons/icon-remote.svg')">
+            </div>
+            <h3 class="title">
+              Wildcard Remote MySQL
+            </h3>
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Hero -->
@@ -369,7 +444,44 @@
     <!-- Begin Hero -->
     <section class="section section__supported-laravel">
       <div class="container-sm">
-        asd
+        <div class="row supported-laravel__header">
+          <div class="col-12">
+            <h3 class="title">
+              Mendukung Penuh Framework Laravel
+            </h3>
+          </div>
+        </div>
+
+        <div class="row supported-laravel__content">
+          <div class="col-6">
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+
+            <ul class="benefit-list">
+              <li>
+                <i class="icon"><check-circle-icon /></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </li>
+              <li>
+                <i class="icon"><check-circle-icon /></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </li>
+              <li>
+                <i class="icon"><check-circle-icon /></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </li>
+            </ul>
+
+            <div class="notes">
+              Nb. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+
+            <button class="btn btn-primary btn-action">
+              Pilih Hosting Anda
+            </button>
+          </div>
+          <div class="col-6">
+            <img :src="require('~/assets/images/icons/banner-support-laravel-hosting.svg')">
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Hero -->

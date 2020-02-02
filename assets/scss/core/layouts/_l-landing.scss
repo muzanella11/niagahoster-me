@@ -259,6 +259,94 @@
           }
         }
       }
+
+      &__detail-package {
+        & .detail-package {
+          &__header {
+            padding-top: 40px;
+            padding-bottom: 24px;
+
+            & .title {
+              font-size: 28px;
+              text-align: center;
+              font-weight: normal;
+            }
+          }
+
+          &__content {
+            & .content {
+              &__item {
+                margin-bottom: 48px;
+              }
+            }
+
+            & .image {
+              text-align: center;
+
+              & img {
+                max-width: 80px;
+              }
+            }
+
+            & .title {
+              font-size: 24px;
+              text-align: center;
+              margin-bottom: 8px;
+            }
+
+            & .description {
+              font-family: $font-montserrat;
+              font-size: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      &__supported-laravel {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        & .supported-laravel {
+          &__header {
+            padding-top: 40px;
+            padding-bottom: 24px;
+
+            & .title {
+              font-size: 28px;
+              text-align: center;
+              font-weight: normal;
+            }
+          }
+
+          &__content {
+            & .description {
+              font-family: $font-montserrat;
+              font-size: 16px;
+              margin-bottom: 16px;
+            }
+
+            & .benefit-list {
+              & li {
+                font-size: 16px;
+                margin-bottom: 8px;
+
+                & .icon {
+                  color: #00b348;
+                }
+              }
+            }
+
+            & .notes {
+              font-size: 12px;
+              padding: 16px 0;
+            }
+
+            & .btn-action {
+              border-radius: 18px;
+            }
+          }
+        }
+      }
     }
 
     & .title {
