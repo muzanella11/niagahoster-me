@@ -347,6 +347,60 @@
           }
         }
       }
+
+      &__feature-technology {
+        & .feature-technology {
+          &__header {
+            padding-top: 40px;
+            padding-bottom: 24px;
+
+            & .title {
+              font-size: 28px;
+              text-align: center;
+              font-weight: normal;
+            }
+          }
+
+          &__content {
+            margin-bottom: 16px;
+          }
+
+          &__footer {
+            margin-bottom: 80px;
+
+            & .btn {
+              border-color: $color-grey-main;
+              color: $color-grey-main;
+              border-radius: 18px;
+
+              &:hover {
+                background: $color-blue-light;
+                border-color: $color-blue-light;
+                color: white;
+              }
+            }
+          }
+
+          &__server-detail {
+            & .title {
+              font-size: 28px;
+              font-weight: normal;
+            }
+
+            & .description {
+              margin-bottom: 16px;
+            }
+
+            & .btn {
+              border-radius: 18px;
+            }
+          }
+        }
+      }
+
+      &__share {
+        //
+      }
     }
 
     & .title {

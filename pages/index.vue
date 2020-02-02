@@ -489,7 +489,58 @@
     <!-- Begin Hero -->
     <section class="section section__feature-technology">
       <div class="container-sm">
-        asd
+        <div class="row feature-technology__header">
+          <div class="col-12">
+            <h3 class="title">
+              Modul Lengkap untuk Menjalankan Aplikasi PHP Anda
+            </h3>
+          </div>
+        </div>
+
+        <div class="row feature-technology__content">
+          <div
+            v-for="(itemFeatureTech, indexFeatureTech) in 4"
+            :key="indexFeatureTech"
+            class="col-3"
+          >
+            <ul>
+              <li
+                v-for="(itemFeature, indexFeature) in 15"
+                :key="indexFeature"
+              >
+                module {{ itemFeature }}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row feature-technology__footer text-center">
+          <div class="col-12">
+            <button class="btn btn-outline-primary">
+              Selengkapnya
+            </button>
+          </div>
+        </div>
+
+        <div class="row feature-technology__server-detail">
+          <div class="col-6">
+            <h3 class="title">
+              Linux Hosting yang Stabil dengan Teknologi LVE
+            </h3>
+            <p class="description">
+              Lorem <strong>Ipsum</strong> is simply dummy text of <strong>the</strong> printing and typesetting industry.
+              Lorem Ipsum <strong>is</strong> simply dummy text <strong>of</strong> the printing and typesetting industry.
+              Lorem Ipsum is <strong>simply</strong> dummy <strong>text</strong> of the printing and typesetting industry.
+              Lorem Ipsum is simply <strong>dummy</strong> text of the printing and typesetting industry.
+            </p>
+            <button class="btn btn-primary">
+              Pilih Hosting Anda
+            </button>
+          </div>
+          <div class="col-6">
+            <img :src="require('~/assets/images/image-support.png')">
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Hero -->
