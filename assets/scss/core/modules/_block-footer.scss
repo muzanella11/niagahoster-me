@@ -7,7 +7,187 @@
 /** This Place For Block Footer **/
 .#{$namespace} {
   & .c-footer {
-    //
+    background: $color-footer-background;
+    padding-top: 100px;
+    padding-bottom: 48px;
+    color: $color-grey-dark-lighter;
+
+    & .footer {
+      &__list-menus {
+        margin-bottom: 48px;
+
+        & .list-menus {
+          & li {
+            padding-bottom: 8px;
+
+            &:last-child {
+              padding-bottom: 0;
+            }
+
+            & a {
+              font-size: 14px;
+              color: $color-grey-dark-lighter;
+
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+
+      &__newsletter-list {
+        & .newsletter-list {
+          @include clearfix;
+
+          & li {
+            float: left;
+            padding-right: 16px;
+
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+
+      &__subscribe {
+        width: 250px;
+
+        & .subscribe {
+          &__wrapper {
+            position: relative;
+            background: white;
+            display: block;
+            width: 100%;
+            height: 50px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+          }
+
+          &-input {
+            width: 100%;
+            height: 100%;
+            padding-right: 120px;
+            border: none;
+            border-radius: 30px;
+            padding-left: 16px;
+
+            &::placeholder {
+              color: $color-placeholder;
+            }
+          }
+
+          &-action {
+            position: absolute;
+            right: 5px;
+            height: 80%;
+            border-radius: 30px;
+            margin-top: 5px;
+            background: $color-blue-light;
+            color: white;
+            border: none;
+          }
+        }
+      }
+
+      &__socmed {
+        & .socmed {
+          &__button {
+            border: 4px solid $color-grey-dark-lighter;
+            width: 48px;
+            display: block;
+            height: 48px;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      &__list-payment {
+        & .list-payment {
+          position: relative;
+          width: 100%;
+          display: block;
+          margin-bottom: 16px;
+
+          @include clearfix;
+
+          & li {
+            border: 2px solid $color-grey-dark-lighter;
+            padding: 8px;
+            float: left;
+            margin-right: 8px;
+            border-radius: 4px;
+
+            & img {
+              width: 70px;
+              height: 20px;
+            }
+          }
+        }
+      }
+
+      &__copyright {
+        margin-top: 48px;
+
+        & .copyright {
+          &__wrapper-content {
+            border-top: 1px solid #2b2b2b;
+            padding-top: 16px;
+            font-size: 12px;
+
+            & .wrapper-content {
+              &__list-privacy-policy {
+                position: relative;
+
+                @include clearfix;
+
+                & .list-privacy-policy {
+                  float: right;
+
+                  @include clearfix;
+
+                  & li {
+                    float: left;
+                    margin-right: 8px;
+                    border-right: 1px solid $color-grey-dark-lighter;
+                    padding-right: 8px;
+
+                    &:last-child {
+                      border: none;
+                      margin: 0;
+                      padding: 0;
+                    }
+
+                    & a {
+                      color: $color-grey-dark-lighter;
+
+                      &:hover {
+                        opacity: 0.5;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .title {
+      color: $color-grey-dark-light;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    & .description {
+      display: block;
+      color: $color-grey-dark-light;
+      opacity: 0.5;
+      font-size: 14px;
+    }
   }
 }
 

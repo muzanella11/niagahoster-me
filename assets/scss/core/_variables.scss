@@ -3,15 +3,23 @@
 ******************************************/
 
 /************** Font **************/
-$typeface-primary:          'Roboto', sans-serif;
+$font-roboto:                         'Roboto', sans-serif;
+$font-montserrat:                     'Montserrat', sans-serif;
+
+$typeface-primary:                    $font-roboto;
 
 /* ************************************ */
 
 /************** Theme Color **************/
-$color-grey-main:           #6e6e6e;
-$color-grey-dark:           #303030;
+$color-grey-main:                    #6e6e6e;
+$color-grey-dark:                    #303030;
+$color-grey-dark-light:              #828282;
+$color-grey-dark-lighter:            #c4c4c4;
+$color-blue-light:                   #04a2f3;
+$color-blue-dark:                    #017fde;
 
-$color-main-text:           $color-grey-main;
-$color-footer:              $color-grey-dark;
+$color-main-text:                      $color-grey-main;
+$color-placeholder:                    $color-grey-dark-lighter;
+$color-footer-background:              $color-grey-dark;
 
 /* ************************************ */
