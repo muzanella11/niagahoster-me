@@ -1,4 +1,14 @@
+import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
+import GooglePlusIcon from 'vue-material-design-icons/GooglePlus.vue'
+import TwitterIcon from 'vue-material-design-icons/Twitter.vue'
+
 export default {
+  components: {
+    FacebookIcon,
+    GooglePlusIcon,
+    TwitterIcon
+  },
+
   data () {
     return {
       firstRowMenus: [

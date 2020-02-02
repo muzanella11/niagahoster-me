@@ -153,6 +153,58 @@
                     border-right: none;
                     padding: 0;
                     min-height: 250px;
+                    transition: all 0.5s ease-in-out;
+
+                    &.active {
+                      border-color: $color-blue-light;
+                      border: 1px solid $color-blue-light;
+                      transform: scale(1.1);
+                      z-index: 1;
+
+                      & .content-card {
+                        &__header {
+                          background: $color-blue-light;
+                          border-color: $color-blue-light;
+                          color: white;
+                        }
+
+                        &__body-content {
+                          & .body-content {
+                            &__pricing {
+                              border-color: $color-blue-light;
+
+                              & .pricing {
+                                &__before-pricing {
+                                  background: $color-blue-light;
+                                  border-color: $color-blue-light;
+                                  color: white;
+                                }
+
+                                &__after-pricing {
+                                  background: $color-blue-light;
+                                  border-color: $color-blue-light;
+                                  color: white;
+                                }
+                              }
+                            }
+
+                            &__user {
+                              background: $color-blue-dark;
+                              border-color: $color-blue-dark;
+                              color: white;
+                            }
+                          }
+                        }
+
+                        &__footer {
+                          & .btn {
+                            background: $color-blue-light;
+                            border-color: $color-blue-light;
+                            color: white;
+                          }
+                        }
+                      }
+                    }
 
                     &:last-child {
                       border-right: 1px solid rgba(0, 0, 0, 0.125);
@@ -162,6 +214,8 @@
                       cursor: pointer;
                       border-color: $color-blue-light;
                       border: 1px solid $color-blue-light;
+                      transform: scale(1.1);
+                      z-index: 1;
 
                       & .content-card {
                         &__header {
@@ -399,7 +453,75 @@
       }
 
       &__share {
-        //
+        & .share {
+          &__share-socmed {
+            padding: 16px 0;
+            background: #f7f7f7;
+
+            & .share-socmed {
+              &__wording {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: table;
+
+                & .wording {
+                  display: table-cell;
+                  vertical-align: middle;
+                }
+              }
+            }
+
+            & .socmed-list {
+              position: relative;
+
+              @include clearfix;
+
+              & li {
+                float: left;
+                margin-right: 8px;
+
+                &:last-child {
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          &__cs-contact {
+            background: $color-blue-light;
+            padding: 48px 0;
+
+            & .row > {
+              & [class^="col-"] {
+                font-size: 28px;
+                font-family: $font-montserrat;
+                color: white;
+                border-right: 1px solid white;
+
+                &:last-child {
+                  border: none;
+                }
+              }
+            }
+
+            & .btn {
+              &-action {
+                margin-left: 24px;
+                border-color: white;
+                color: white;
+                border-radius: 18px;
+                padding-right: 24px;
+                padding-left: 24px;
+
+                &:hover {
+                  background: transparent;
+                  opacity: 0.5;
+                }
+              }
+            }
+          }
+        }
       }
     }
 

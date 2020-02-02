@@ -63,19 +63,25 @@
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
               </li>
-              <li class="footer__socmed">
+              <li class="footer__socmed text-center">
                 <a href="javascript:;" class="socmed__button">
-                  f
+                  <i class="icon">
+                    <facebook-icon />
+                  </i>
                 </a>
               </li>
-              <li class="footer__socmed">
+              <li class="footer__socmed text-center">
                 <a href="javascript:;" class="socmed__button">
-                  f
+                  <i class="icon">
+                    <twitter-icon />
+                  </i>
                 </a>
               </li>
-              <li class="footer__socmed">
+              <li class="footer__socmed text-center">
                 <a href="javascript:;" class="socmed__button">
-                  f
+                  <i class="icon">
+                    <google-plus-icon />
+                  </i>
                 </a>
               </li>
             </ul>

@@ -547,8 +547,61 @@
 
     <!-- Begin Hero -->
     <section class="section section__share">
-      <div class="container-sm">
-        asd
+      <div class="share__share-socmed">
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-6">
+              <div class="share-socmed__wording">
+                <div class="wording">
+                  Bagikan jika Anda menyukai halaman ini
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul class="socmed-list">
+                <li>
+                  <button id="btnSocmed1" class="btn btn-primary">
+                    <facebook-icon />
+                  </button>
+                  <b-tooltip target="btnSocmed1" placement="right">
+                    80k
+                  </b-tooltip>
+                </li>
+                <li>
+                  <button id="btnSocmed2" class="btn btn-primary">
+                    <twitter-icon />
+                  </button>
+                  <b-tooltip target="btnSocmed2" placement="right">
+                    450
+                  </b-tooltip>
+                </li>
+                <li>
+                  <button id="btnSocmed3" class="btn btn-primary">
+                    <google-plus-icon />
+                  </button>
+                  <b-tooltip target="btnSocmed3" placement="right">
+                    1900
+                  </b-tooltip>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="share__cs-contact">
+        <div class="container-sm">
+          <div class="row">
+            <div class="col-9 wording">
+              Perlu <strong>BANTUAN?</strong> Hubungi Kami : <strong>0274-5305505</strong>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-outline-primary btn-action">
+                <i class="icon"><forum-icon /></i> Live Chat
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Hero -->
@@ -557,9 +610,18 @@
 
 <script>
 import CheckCircleIcon from 'vue-material-design-icons/CheckCircle.vue'
+import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
+import GooglePlusIcon from 'vue-material-design-icons/GooglePlus.vue'
+import TwitterIcon from 'vue-material-design-icons/Twitter.vue'
+import ForumIcon from 'vue-material-design-icons/Forum.vue'
+
 export default {
   components: {
-    CheckCircleIcon
+    CheckCircleIcon,
+    FacebookIcon,
+    GooglePlusIcon,
+    TwitterIcon,
+    ForumIcon
   },
 
   data () {
