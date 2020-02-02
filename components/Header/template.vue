@@ -9,17 +9,17 @@
             <ul class="right-menus">
               <li>
                 <a href="javascript:;">
-                  Member area
+                  <i class="icon"><account-icon /></i> Member area
                 </a>
               </li>
               <li>
                 <a href="javascript:;">
-                  Live chat
+                  <i class="icon"><forum-icon /></i> Live chat
                 </a>
               </li>
               <li>
                 <a href="javascript:;">
-                  Customer service
+                  <i class="icon"><phone-icon /></i> Customer service
                 </a>
               </li>
             </ul>

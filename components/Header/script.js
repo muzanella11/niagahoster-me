@@ -1,4 +1,14 @@
+import AccountIcon from 'vue-material-design-icons/Account.vue'
+import ForumIcon from 'vue-material-design-icons/Forum.vue'
+import PhoneIcon from 'vue-material-design-icons/Phone.vue'
+
 export default {
+  components: {
+    AccountIcon,
+    ForumIcon,
+    PhoneIcon
+  },
+
   data () {
     return {
       listMenu: [
