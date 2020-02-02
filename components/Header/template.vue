@@ -30,7 +30,7 @@
     <!-- End mini header -->
 
     <!-- Begin main header -->
-    <div class="header__main-header">
+    <nav class="header__main-header navbar-light">
       <div class="container-sm">
         <div class="row">
           <div class="col-2">
@@ -42,7 +42,7 @@
           <div class="col-10 main-header__right-menus">
             <ul class="right-menus">
               <li
-                v-for="(itemMenu, indexMenu) in listMenu"
+                v-for="(itemMenu, indexMenu) in entriesHeaderMenus"
                 :key="indexMenu"
               >
                 <a :href="itemMenu.url">
@@ -50,10 +50,28 @@
                 </a>
               </li>
             </ul>
+            <div class="right-menus__mobile-content">
+              <div class="mobile-content__wrapper">
+                <div class="wrapper-main">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    @click="toggleSidebar"
+                  >
+                    <span class="navbar-toggler-icon" />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
     <!-- End main header -->
   </header>
 </template>

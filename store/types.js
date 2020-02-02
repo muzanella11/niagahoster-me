@@ -8,5 +8,7 @@ export const SET_STATE = `${NAMESPACE}_SET_STATE`
 /*******************************************************************************/
 
 /** ************************* For Getters ****************************************/
-export const GET_SNACKBAR_OPTIONS = `${NAMESPACE}_GET_SNACKBAR_OPTIONS`
+export const GET_HEADER_MENUS = `${NAMESPACE}_GET_HEADER_MENUS`
+export const GET_SIDEBAR_STATUS = `${NAMESPACE}_GET_SIDEBAR_STATUS`
+export const GET_FOOTER_MENUS = `${NAMESPACE}_GET_FOOTER_MENUS`
 /*******************************************************************************/

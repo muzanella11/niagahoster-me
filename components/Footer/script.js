@@ -1,6 +1,8 @@
 import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
 import GooglePlusIcon from 'vue-material-design-icons/GooglePlus.vue'
 import TwitterIcon from 'vue-material-design-icons/Twitter.vue'
+import { mapGetters } from 'vuex'
+import * as ROOTTYPES from '~/store/types'
 
 export default {
   components: {
@@ -341,6 +343,26 @@ export default {
           title: 'bca'
         }
       ]
+    }
+  },
+
+  computed: {
+    ...mapGetters({
+      entriesFooterMenus: ROOTTYPES.GET_FOOTER_MENUS
+    }),
+
+    footerSectionOne () {
+      if (!this.entriesFooterMenus) return []
+      if (this.entriesFooterMenus.length < 0) return []
+
+      return this.entriesFooterMenus.filter(item => item.name === 'menus-section-1')[0].data
+    },
+
+    footerSectionTwo () {
+      if (!this.entriesFooterMenus) return []
+      if (this.entriesFooterMenus.length < 0) return []
+
+      return this.entriesFooterMenus.filter(item => item.name === 'menus-section-2')[0].data
     }
   },
 

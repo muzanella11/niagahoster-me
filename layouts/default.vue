@@ -1,8 +1,15 @@
 <template>
-  <main>
+  <main
+    class="main-layout"
+    :class="[entriesSidebarStatus ? 'active' : '']"
+  >
     <!-- Begin Header -->
     <niagahoster-header />
     <!-- End Header -->
+
+    <!-- Begin Aside -->
+    <niagahoster-aside />
+    <!-- End Aside -->
 
     <!-- Begin Content -->
     <nuxt />
@@ -11,17 +18,57 @@
     <!-- Begin Footer -->
     <niagahoster-footer />
     <!-- End Footer -->
+
+    <div
+      class="overlay"
+      :class="[entriesSidebarStatus ? 'active' : '']"
+    />
   </main>
 </template>
+
+<style lang="scss">
+.main-layout {
+  position: relative;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    right: 200px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    visibility: visible;
+  }
+}
+</style>
+
 <script>
 import NiagahosterHeader from '~/components/Header/template'
+import NiagahosterAside from '~/components/Aside/template'
 import NiagahosterFooter from '~/components/Footer/template'
+import MixinsComponentSettings from '~/mixins/componentSettings'
 
 export default {
   components: {
     NiagahosterHeader,
+    NiagahosterAside,
     NiagahosterFooter
-  }
+  },
+
+  mixins: [
+    MixinsComponentSettings
+  ]
 }
 </script>
 

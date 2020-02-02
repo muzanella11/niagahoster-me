@@ -3,7 +3,7 @@
     <div class="container-sm">
       <div class="row">
         <div
-          v-for="(itemFirstRowMenus, indexFirstRowMenus) in firstRowMenus"
+          v-for="(itemFirstRowMenus, indexFirstRowMenus) in footerSectionOne"
           :key="indexFirstRowMenus"
           class="col-3 footer__list-menus"
         >
@@ -16,16 +16,17 @@
               v-for="(itemMenus, indexMenus) in itemFirstRowMenus.menus"
               :key="indexMenus"
             >
-              <a :href="itemMenus.url">
-                {{ itemMenus.label }}
-              </a>
+              <a
+                :href="itemMenus.url"
+                v-html="itemMenus.label"
+              />
             </li>
           </ul>
         </div>
       </div>
       <div class="row">
         <div
-          v-for="(itemSecondRowMenus, indexSecondRowMenus) in secondRowMenus"
+          v-for="(itemSecondRowMenus, indexSecondRowMenus) in footerSectionTwo"
           :key="indexSecondRowMenus"
           class="col-3 footer__list-menus"
         >
@@ -38,9 +39,10 @@
               v-for="(itemMenus, indexMenus) in itemSecondRowMenus.menus"
               :key="indexMenus"
             >
-              <a :href="itemMenus.url">
-                {{ itemMenus.label }}
-              </a>
+              <a
+                :href="itemMenus.url"
+                v-html="itemMenus.label"
+              />
             </li>
           </ul>
         </div>
