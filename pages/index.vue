@@ -34,7 +34,7 @@
     </section>
     <!-- End Hero -->
 
-    <!-- Begin Hero -->
+    <!-- Begin Package Pricing -->
     <section class="section section__package-pricing accent-line">
       <div class="container-sm">
         <div class="package-pricing__feature-list">
@@ -79,21 +79,26 @@
               </p>
             </div>
           </div>
+
           <div class="row list-pricing__content">
             <div class="col-12">
               <div class="content-card">
                 <div class="row">
-                  <div class="col-3 card text-center">
+                  <div
+                    v-for="(itemPackage, indexPackage) in entriesPackage"
+                    :key="indexPackage"
+                    class="col-3 card text-center"
+                  >
                     <div class="content-card__header card-header">
                       <h3>
-                        Personal
+                        {{ itemPackage.packageName }}
                       </h3>
                     </div>
                     <div class="content-card__body-content">
                       <div class="body-content__pricing">
                         <div class="row pricing__before-pricing">
                           <div class="col-12">
-                            Rp 15.999
+                            {{ itemPackage.pricing.beforeDiscount.amount }}
                           </div>
                         </div>
                         <div class="row pricing__after-pricing">
@@ -101,193 +106,26 @@
                             <div class="after-pricing__big">
                               <span class="wording">Rp</span>
                               <h1 class="wording">
-                                <strong>11</strong>
+                                <strong>{{ itemPackage.pricing.afterDiscount.wording.big }}</strong>
                               </h1>
-                              <span class="wording"><strong>.999</strong>/bln</span>
+                              <span class="wording"><strong>{{ itemPackage.pricing.afterDiscount.wording.small }}</strong>/bln</span>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="body-content__user">
-                        <strong>11</strong> user sd
+                        <strong>{{ itemPackage.userCounter }}</strong> Pengguna terdaftar
                       </div>
                       <div class="body-content__feature">
                         <ul>
-                          <li>
-                            <strong>
-                              xxx
+                          <li
+                            v-for="(itemBenefit, indexBenefit) in itemPackage.benefit"
+                            :key="indexBenefit"
+                          >
+                            <strong v-if="itemBenefit.amount">
+                              {{ itemBenefit.amount }}
                             </strong>
-                          </li>
-                          <li>
-                            <strong>
-                              xxx
-                            </strong>
-                            yyyy
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="content-card__footer card-footer">
-                      <div class="row">
-                        <div class="col-12">
-                          <button class="btn btn-outline-primary">
-                            Pilih Sekarang
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-3 card text-center">
-                    <div class="content-card__header card-header">
-                      <h3>
-                        Personal
-                      </h3>
-                    </div>
-                    <div class="content-card__body-content">
-                      <div class="body-content__pricing">
-                        <div class="row pricing__before-pricing">
-                          <div class="col-12">
-                            Rp 15.999
-                          </div>
-                        </div>
-                        <div class="row pricing__after-pricing">
-                          <div class="col-12">
-                            <div class="after-pricing__big">
-                              <span class="wording">Rp</span>
-                              <h1 class="wording">
-                                <strong>11</strong>
-                              </h1>
-                              <span class="wording"><strong>.999</strong>/bln</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="body-content__user">
-                        <strong>11</strong> user sd
-                      </div>
-                      <div class="body-content__feature">
-                        <ul>
-                          <li>
-                            <strong>
-                              xxx
-                            </strong>
-                          </li>
-                          <li>
-                            <strong>
-                              xxx
-                            </strong>
-                            yyyy
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="content-card__footer card-footer">
-                      <div class="row">
-                        <div class="col-12">
-                          <button class="btn btn-outline-primary">
-                            Pilih Sekarang
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-3 card text-center">
-                    <div class="content-card__header card-header">
-                      <h3>
-                        Personal
-                      </h3>
-                    </div>
-                    <div class="content-card__body-content">
-                      <div class="body-content__pricing">
-                        <div class="row pricing__before-pricing">
-                          <div class="col-12">
-                            Rp 15.999
-                          </div>
-                        </div>
-                        <div class="row pricing__after-pricing">
-                          <div class="col-12">
-                            <div class="after-pricing__big">
-                              <span class="wording">Rp</span>
-                              <h1 class="wording">
-                                <strong>11</strong>
-                              </h1>
-                              <span class="wording"><strong>.999</strong>/bln</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="body-content__user">
-                        <strong>11</strong> user sd
-                      </div>
-                      <div class="body-content__feature">
-                        <ul>
-                          <li>
-                            <strong>
-                              xxx
-                            </strong>
-                          </li>
-                          <li>
-                            <strong>
-                              xxx
-                            </strong>
-                            yyyy
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="content-card__footer card-footer">
-                      <div class="row">
-                        <div class="col-12">
-                          <button class="btn btn-outline-primary">
-                            Pilih Sekarang
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-3 card text-center">
-                    <div class="content-card__header card-header">
-                      <h3>
-                        Personal
-                      </h3>
-                    </div>
-                    <div class="content-card__body-content">
-                      <div class="body-content__pricing">
-                        <div class="row pricing__before-pricing">
-                          <div class="col-12">
-                            Rp 15.999
-                          </div>
-                        </div>
-                        <div class="row pricing__after-pricing">
-                          <div class="col-12">
-                            <div class="after-pricing__big">
-                              <span class="wording">Rp</span>
-                              <h1 class="wording">
-                                <strong>11</strong>
-                              </h1>
-                              <span class="wording"><strong>.999</strong>/bln</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="body-content__user">
-                        <strong>11</strong> user sd
-                      </div>
-                      <div class="body-content__feature">
-                        <ul>
-                          <li>
-                            <strong>
-                              xxx
-                            </strong>
-                          </li>
-                          <li>
-                            <strong>
-                              xxx
-                            </strong>
-                            yyyy
+                            {{ itemBenefit.wording }}
                           </li>
                         </ul>
                       </div>
@@ -356,9 +194,9 @@
         </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End Package Pricing -->
 
-    <!-- Begin Hero -->
+    <!-- Begin Detail Package -->
     <section class="section section__detail-package accent-line">
       <div class="container-sm">
         <div class="row detail-package__header">
@@ -439,9 +277,9 @@
         </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End Detail Package -->
 
-    <!-- Begin Hero -->
+    <!-- Begin Supported Laravel -->
     <section class="section section__supported-laravel">
       <div class="container-sm">
         <div class="row supported-laravel__header">
@@ -484,9 +322,9 @@
         </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End Supported Laravel -->
 
-    <!-- Begin Hero -->
+    <!-- Begin Feature Tech -->
     <section class="section section__feature-technology">
       <div class="container-sm">
         <div class="row feature-technology__header">
@@ -543,9 +381,9 @@
         </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End Feature Tech -->
 
-    <!-- Begin Hero -->
+    <!-- Begin Share -->
     <section class="section section__share">
       <div class="share__share-socmed">
         <div class="container-sm">
@@ -604,7 +442,7 @@
         </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End Share -->
   </div>
 </template>
 
@@ -614,6 +452,8 @@ import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
 import GooglePlusIcon from 'vue-material-design-icons/GooglePlus.vue'
 import TwitterIcon from 'vue-material-design-icons/Twitter.vue'
 import ForumIcon from 'vue-material-design-icons/Forum.vue'
+import { mapGetters } from 'vuex'
+import * as HOMEPAGETYPES from '~/store/modules/homepage/types'
 
 export default {
   components: {
@@ -625,7 +465,15 @@ export default {
   },
 
   data () {
-    return {}
+    return {
+      //
+    }
+  },
+
+  computed: {
+    ...mapGetters({
+      entriesPackage: HOMEPAGETYPES.GET_ENTRIES_PACKAGE
+    })
   }
 }
 </script>

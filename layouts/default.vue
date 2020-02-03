@@ -22,6 +22,7 @@
     <div
       class="overlay"
       :class="[entriesSidebarStatus ? 'active' : '']"
+      @click="toggleSidebar"
     />
   </main>
 </template>
